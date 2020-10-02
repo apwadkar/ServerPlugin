@@ -1,0 +1,25 @@
+name: ServerPlugin
+description: Sample server plugin
+version: '1.0'
+api-version: '1.16'
+main: com.github.apwadkar.mcplugin.ServerPlugin
+commands:
+  addHunter:
+    description: Adds a hunter
+    usage: /addhunter <player name>
+    permission: ServerPlugin.manhunt.addHunter
+
+  removeHunter:
+    description: Removes a hunter
+    usage: /removehunter <player name>
+    permission: ServerPlugin.manhunt.removeHunter
+
+  showHealth:
+    description: Display health of the current user
+    usage: /showhealth (start <player name> | stop)
+    permission: ServerPlugin.manhunt.showHealth
+
+  spawnNPC:
+    description: Spawns a custom NPC
+    usage: /spawnnpc <npc name>
+    permission: ServerPlugin.manhunt.spawnNPC
